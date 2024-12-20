@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_lab_4.Controller">
+   <children>
+      <TextField fx:id="txt_discount" editable="true" layoutX="130.0" layoutY="120.0" onAction="#updateCheapestTariff" promptText="скидка">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txt_price" editable="false" layoutX="130.0" layoutY="85.0" onAction="#updateCheapestTariff" promptText="цена до скидки">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txt_tariff" editable="false" layoutX="130.0" layoutY="50.0" onAction="#updateCheapestTariff" promptText="название">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text fill="#993600" layoutX="49.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="название" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#993600" layoutX="13.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="цена до скидки" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#993600" layoutX="62.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="скидка" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#993600" layoutX="59.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="самый дешёвый тариф" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_finalPrice" editable="true" layoutX="130.0" layoutY="155.0" onAction="#updateCheapestTariff" promptText="итоговая цена">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text fill="#993600" layoutX="20.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="итоговая цена" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

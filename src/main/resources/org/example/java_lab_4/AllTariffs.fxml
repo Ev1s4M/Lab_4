@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aaaaaaaa;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_lab_4.Controller_Table">
+   <children>
+      <TableView fx:id="tariffTable" onMouseClicked="#getSelected" style="-fx-border-color: gray; -fx-background-color: white;">
+        <columns>
+            <TableColumn fx:id="col_id" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: orange; -fx-border-color: black;" text="id" visible="false" />
+          <TableColumn fx:id="col_tariff" prefWidth="200.0" style="-fx-background-color: orange; -fx-border-color: black;" text="Название тарифа" />
+          <TableColumn fx:id="col_finalPrice" minWidth="0.0" prefWidth="120.0" style="-fx-background-color: orange; -fx-border-color: black;" text="Цена" />
+            <TableColumn fx:id="col_price" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: orange; -fx-border-color: black;" text="Цена до скидки" visible="false" />
+            <TableColumn fx:id="col_discount" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: orange; -fx-border-color: black;" text="Скидка" visible="false" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Button fx:id="changeButton" layoutX="400.0" layoutY="300.0" mnemonicParsing="false" onAction="#changeData" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: orange;" text="изменить" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: red;" text="удалить" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txt_id" editable="false" layoutX="400.0" layoutY="10.0" prefHeight="30.0" prefWidth="170.0" visible="false">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txt_tariff" layoutX="380.0" layoutY="50.0" prefHeight="35.0" prefWidth="180.0" promptText="название тарифа">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txt_price" layoutX="380.0" layoutY="100.0" prefHeight="35.0" prefWidth="180.0" promptText="цена до скидки">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txt_discount" layoutX="380.0" layoutY="150.0" prefHeight="35.0" prefWidth="180.0" promptText="скидка">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txt_finalPrice" editable="false" layoutX="380.0" layoutY="200.0" prefHeight="35.0" prefWidth="180.0" promptText="итоговая цена">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="addButton" layoutX="400.0" layoutY="250.0" mnemonicParsing="false" onAction="#addData" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: green;" text="добавить" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
